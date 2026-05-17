@@ -1,0 +1,29 @@
+.installBtn {
+	background-color: #e8192c;
+	color: white;
+	padding: 0.75rem 1.5rem;
+	border-radius: 24px;
+	font-weight: 700;
+	font-size: 0.95rem;
+	transition: all 0.2s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	border: 2px solid #e8192c;
+	margin: 20px auto;
+	width: calc(100% - 32px);
+	max-width: 320px;
+	box-shadow: 0 4px 12px rgba(232, 25, 44, 0.2);
+	cursor: pointer;
+}
+
+.installBtn:hover {
+	background-color: white;
+	color: #e8192c;
+	box-shadow: 0 6px 16px rgba(232, 25, 44, 0.25);
+}
+
+.installBtn:active {
+	transform: scale(0.98);
+}

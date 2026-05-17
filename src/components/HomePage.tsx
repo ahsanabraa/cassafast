@@ -20,6 +20,7 @@ import {
 	Zap
 } from 'lucide-react'
 
+import PwaInstallButton from './ButtonPwaInstall/ButtonPwaInstall'
 import styles from './HomePage.module.css'
 
 import type { LucideIcon } from 'lucide-react'
@@ -269,6 +270,9 @@ const HomePage: FC = () => {
 					</span>
 				</div>
 			</section>
+
+			{/* PWA Install Button */}
+			<PwaInstallButton />
 		</div>
 	)
 }

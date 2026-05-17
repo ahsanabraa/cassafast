@@ -14,6 +14,7 @@ const eslintConfig = defineConfig([
 
 	{
 		files: ['**/*.{ts,tsx}'],
+		ignores: ['src/app/sw.ts'],
 		languageOptions: {
 			ecmaVersion: 'latest',
 			sourceType: 'module',
@@ -141,6 +142,29 @@ const eslintConfig = defineConfig([
 			'import/resolver': {
 				typescript: {
 					project: './tsconfig.json'
+				}
+			}
+		}
+	},
+	{
+		files: ['src/app/sw.ts'],
+		languageOptions: {
+			parser: tsEslint.parser,
+			parserOptions: {
+				project: './tsconfig.worker.json'
+			},
+			globals: {
+				...globals.serviceworker
+			}
+		},
+		rules: {
+			...tsEslint.configs.recommended.rules,
+			'no-restricted-globals': 'off'
+		},
+		settings: {
+			'import/resolver': {
+				typescript: {
+					project: './tsconfig.worker.json'
 				}
 			}
 		}

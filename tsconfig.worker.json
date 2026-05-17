@@ -1,0 +1,10 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"lib": ["webworker", "esnext", "webworker.importscripts"],
+		"allowSyntheticDefaultImports": true,
+		"types": ["node"]
+	},
+	"include": ["src/app/sw.ts"],
+	"exclude": ["node_modules"]
+}

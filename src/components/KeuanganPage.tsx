@@ -1,17 +1,4 @@
-import {
-	Banknote,
-	Building2,
-	ChevronDown,
-	ChevronRight,
-	CreditCard,
-	Crown,
-	FileText,
-	MessageCircle,
-	ShieldCheck,
-	ShieldPlus,
-	TrendingUp,
-	Users
-} from 'lucide-react'
+import { Banknote, Building2, ChevronDown, ChevronRight, CreditCard, Crown, FileText, MessageCircle, ShieldCheck, ShieldPlus, TrendingUp, Users } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 import styles from './KeuanganPage.module.css'
@@ -55,6 +42,7 @@ const KeuanganPage: FC<KeuanganPageProps> = ({ onPinjam }) => {
 		if (typeof window !== 'undefined') {
 			const count = parseInt(localStorage.getItem('cassafast-loan-count') ?? '0', 10)
 
+			// eslint-disable-next-line @eslint-react/set-state-in-effect
 			setLoanCount(count)
 		}
 	}, [])
@@ -125,14 +113,20 @@ const KeuanganPage: FC<KeuanganPageProps> = ({ onPinjam }) => {
 
 					<div className={styles.ojkBanner}>
 						<div className={styles.ojkIcon}>
-							<ShieldCheck size={22} color="#c0000f" />
+							<ShieldCheck
+								size={22}
+								color="#c0000f"
+							/>
 							<span className={styles.ojkText}>OJK</span>
 						</div>
 						<div className={styles.ojkContent}>
 							<p className={styles.ojkTitle}>Terpercaya &amp; Diawasi OJK</p>
 							<p className={styles.ojkSub}>100% online, proses cepat!</p>
 						</div>
-						<ChevronRight size={18} color="#bbb" />
+						<ChevronRight
+							size={18}
+							color="#bbb"
+						/>
 					</div>
 				</div>
 
@@ -144,7 +138,6 @@ const KeuanganPage: FC<KeuanganPageProps> = ({ onPinjam }) => {
 					Pinjam
 				</button>
 			</section>
-
 
 			{/* Tagihan Card (Skenario 2) */}
 			{scenario.hasBill && (
@@ -202,5 +195,3 @@ const KeuanganPage: FC<KeuanganPageProps> = ({ onPinjam }) => {
 }
 
 export default KeuanganPage
-
-

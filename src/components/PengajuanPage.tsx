@@ -37,11 +37,11 @@ const PengajuanPage: FC<PengajuanPageProps> = ({ onBack }) => {
 		? [
 				{ id: 1, label: 'Rp3jt', value: 3000000 },
 				{ id: 2, label: 'Rp1,5jt', value: 1500000 }
-		  ]
+			]
 		: [
 				{ id: 1, label: 'Rp750rb', value: 750000 },
 				{ id: 2, label: 'Rp500rb', value: 500000 }
-		  ]
+			]
 
 	const getLoanCount = (): number => {
 		if (typeof window === 'undefined') {
@@ -61,14 +61,13 @@ const PengajuanPage: FC<PengajuanPageProps> = ({ onBack }) => {
 		if (typeof window !== 'undefined') {
 			const count = parseInt(localStorage.getItem(STORAGE_KEY) ?? '0', 10)
 
+			// eslint-disable-next-line @eslint-react/set-state-in-effect
 			setLoanCount(count)
-			
+
 			const isS1 = count % 2 === 0
 
-			setSelectedAmount(isS1
-				? { id: 1, label: 'Rp3jt', value: 3000000 }
-				: { id: 1, label: 'Rp750rb', value: 750000 }
-			)
+			// eslint-disable-next-line @eslint-react/set-state-in-effect
+			setSelectedAmount(isS1 ? { id: 1, label: 'Rp3jt', value: 3000000 } : { id: 1, label: 'Rp750rb', value: 750000 })
 		}
 	}, [])
 
@@ -102,7 +101,6 @@ const PengajuanPage: FC<PengajuanPageProps> = ({ onBack }) => {
 
 	const cicilanDate = (() => {
 		const d = new Date()
-
 
 		d.setDate(d.getDate() + 28)
 
@@ -260,7 +258,7 @@ const PengajuanPage: FC<PengajuanPageProps> = ({ onBack }) => {
 				<div className={styles.overlay}>
 					<div className={styles.overlayCard}>
 						<div className={styles.spinner} />
-						<p className={styles.overlayText}>Sedang memproses pengajuan...</p>
+						<p className={styles.overlayText}>Sedang memproses...</p>
 					</div>
 				</div>
 			)}
