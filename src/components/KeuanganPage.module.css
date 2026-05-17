@@ -1,0 +1,364 @@
+.container {
+	background: #f5f5f5;
+	min-height: 100%;
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 18px 16px 10px;
+	background: #fff;
+}
+
+.headerTitle {
+	font-size: 22px;
+	font-weight: 800;
+	color: #111;
+}
+
+.headerChat {
+	position: relative;
+	color: #444;
+}
+
+.badge {
+	position: absolute;
+	top: -6px;
+	right: -6px;
+	background: #e8192c;
+	color: #fff;
+	font-size: 9px;
+	font-weight: 700;
+	padding: 2px 4px;
+	border-radius: 8px;
+	min-width: 20px;
+	text-align: center;
+}
+
+/* ============================================================
+   TAGIHAN
+   ============================================================ */
+.tagihanRow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 16px 12px;
+	background: #fff;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.tagihanBtn {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #222;
+}
+
+.tagihanLabel {
+	font-weight: 700;
+}
+
+.tagihanLink {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	font-size: 13px;
+	color: #888;
+}
+
+/* ============================================================
+   MAIN DANA CICIL CARD
+   ============================================================ */
+.mainCard {
+	margin: 12px;
+	background: linear-gradient(145deg, #e8f8f0 0%, #c8f0de 50%, #a8e8cc 100%);
+	border-radius: 20px;
+	overflow: hidden;
+	position: relative;
+}
+
+.mainCardInner {
+	padding: 18px 18px 16px;
+}
+
+.mainCardHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 14px;
+}
+
+.mainCardBrand {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.brandIcon {
+	width: 36px;
+	height: 36px;
+	background: #2da06e;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.brandName {
+	font-size: 17px;
+	font-weight: 700;
+	color: #111;
+}
+
+.fastApproval {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	background: #fff;
+	border-radius: 20px;
+	padding: 4px 10px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #2da06e;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.limitLabel {
+	font-size: 13px;
+	color: #555;
+	margin-bottom: 2px;
+	max-width: none;
+}
+
+.limitAmount {
+	display: flex;
+	align-items: baseline;
+	gap: 4px;
+	margin-bottom: 14px;
+}
+
+.limitCurrency {
+	font-size: 20px;
+	font-weight: 600;
+	color: #111;
+}
+
+.limitNumber {
+	font-size: 30px;
+	font-weight: 700;
+	color: #111;
+	letter-spacing: -1px;
+}
+
+.ojkBanner {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background: #fff8f0;
+	border-radius: 12px;
+	padding: 12px 14px;
+	margin-bottom: 0;
+	border: 1px solid #ffe5cc;
+}
+
+.ojkIcon {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	flex-shrink: 0;
+}
+
+.ojkText {
+	font-size: 11px;
+	font-weight: 900;
+	color: #c0000f;
+	letter-spacing: 0.5px;
+}
+
+.ojkContent {
+	flex: 1;
+}
+
+.ojkTitle {
+	font-size: 13px;
+	font-weight: 700;
+	color: #222;
+	max-width: none;
+}
+
+.ojkSub {
+	font-size: 11px;
+	color: #888;
+	max-width: none;
+}
+
+/* Tombol Pinjam: full-width flush ke bawah card, ikut border-radius card */
+.pinjamBtn {
+	display: block;
+	width: 100%;
+	background: #2da06e;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 16px;
+	border-radius: 0;
+	text-align: center;
+	letter-spacing: 0.3px;
+	margin-top: 14px;
+	transition: background 0.2s;
+}
+
+.pinjamBtn:active {
+	background: #248a5e;
+}
+
+/* ============================================================
+   BILL CARD (SKENARIO 2)
+   ============================================================ */
+.billCard {
+	margin: 0 12px 12px;
+	background: #fff;
+	border-radius: 16px;
+	padding: 16px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+	border: 1px solid #f0f0f0;
+}
+
+.billHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 12px;
+	border-bottom: 1px solid #f9f9f9;
+	padding-bottom: 8px;
+}
+
+.billTitleWrap {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.billTitle {
+	font-size: 14px;
+	font-weight: 700;
+	color: #222;
+}
+
+.billStatus {
+	font-size: 11px;
+	font-weight: 700;
+	color: #e8192c;
+	background: #fff0f0;
+	padding: 3px 8px;
+	border-radius: 6px;
+}
+
+.billBody {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.billLeft {
+	flex: 1;
+}
+
+.billCurrencyWrap {
+	display: flex;
+	align-items: baseline;
+	gap: 2px;
+	margin-bottom: 0;
+}
+
+.billCurrency {
+	font-size: 14px;
+	font-weight: 600;
+	color: #111;
+}
+
+.billAmount {
+	font-size: 22px;
+	font-weight: 700;
+	color: #111;
+	letter-spacing: -0.5px;
+}
+
+.billDueDate {
+	font-size: 11px;
+	color: #888;
+}
+
+.bayarBtn {
+	background: #e8192c;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 700;
+	padding: 8px 18px;
+	border-radius: 20px;
+	flex-shrink: 0;
+	transition: all 0.2s;
+}
+
+.bayarBtn:active {
+	background: #c0000f;
+	transform: scale(0.97);
+}
+
+/* ============================================================
+   QUICK LINKS
+   ============================================================ */
+.quickLinks {
+	background: #fff;
+	display: flex;
+	padding: 16px 8px;
+	justify-content: space-around;
+	margin: 0 0 12px;
+}
+
+.quickItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+}
+
+.quickIconWrap {
+	width: 52px;
+	height: 52px;
+	background: #f5f5f5;
+	border-radius: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+
+.quickBadge {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	background: #e8192c;
+	color: #fff;
+	font-size: 9px;
+	font-weight: 700;
+	padding: 2px 5px;
+	border-radius: 8px;
+	white-space: nowrap;
+}
+
+.quickLabel {
+	font-size: 10px;
+	color: #444;
+	text-align: center;
+	white-space: pre-line;
+	line-height: 1.3;
+}

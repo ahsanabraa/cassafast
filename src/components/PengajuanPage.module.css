@@ -1,0 +1,446 @@
+.container {
+	background: #f0f0f4;
+	min-height: 100%;
+	position: relative;
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 16px;
+	background: #fff;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.backBtn {
+	color: #333;
+	display: flex;
+	align-items: center;
+}
+
+.headerTitle {
+	font-size: 17px;
+	font-weight: 700;
+	color: #111;
+}
+
+.headerRight {
+	font-size: 14px;
+	color: #888;
+}
+
+/* ============================================================
+   PROMO BANNER
+   ============================================================ */
+.promoBanner {
+	background: linear-gradient(90deg, #e8192c 0%, #ff5533 100%);
+	padding: 10px 16px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	overflow: hidden;
+}
+
+.promoBannerBadge {
+	background: #fff;
+	color: #e8192c;
+	font-size: 11px;
+	font-weight: 700;
+	padding: 3px 8px;
+	border-radius: 12px;
+	white-space: nowrap;
+	flex-shrink: 0;
+}
+
+.promoBannerText {
+	color: #fff;
+	font-size: 13px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* ============================================================
+   SECTIONS
+   ============================================================ */
+.section {
+	background: #fff;
+	margin-bottom: 8px;
+	padding: 16px;
+}
+
+.sectionTitle {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 14px;
+	color: #111;
+}
+
+.sectionTitleText {
+	font-size: 16px;
+	font-weight: 700;
+	color: #111;
+}
+
+.optionGrid {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.optionBtn {
+	position: relative;
+	padding: 12px 22px;
+	border-radius: 10px;
+	font-size: 15px;
+	font-weight: 600;
+	border: 2px solid #e0e0e0;
+	color: #444;
+	background: #fafafa;
+	transition: all 0.2s;
+	overflow: hidden;
+}
+
+.optionBtnActive {
+	border-color: #e8192c;
+	color: #e8192c;
+	background: #fff0f0;
+}
+
+.checkBadge {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #e8192c;
+	color: #fff;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0 8px 0 8px;
+}
+
+/* ============================================================
+   SUMMARY CARD
+   ============================================================ */
+.summaryCard {
+	background: #fff;
+	margin-bottom: 8px;
+	padding: 0 16px;
+}
+
+.summaryRow {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 14px 0;
+	border-bottom: 1px solid #f5f5f5;
+	gap: 8px;
+}
+
+.summaryRowThin {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+	border-bottom: 1px solid #f5f5f5;
+	gap: 8px;
+}
+
+.summaryLabel {
+	font-size: 13px;
+	color: #666;
+	max-width: none;
+}
+
+.summaryLabelThin {
+	font-size: 12px;
+	color: #999;
+	max-width: none;
+}
+
+.summaryRight {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.summaryValueBold {
+	font-size: 14px;
+	font-weight: 700;
+	color: #111;
+	max-width: none;
+}
+
+.summaryValueSub {
+	font-size: 11px;
+	color: #999;
+}
+
+.summaryValueThin {
+	font-size: 13px;
+	color: #333;
+	max-width: none;
+}
+
+.summaryProvisi {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.summaryStrike {
+	font-size: 13px;
+	color: #bbb;
+	text-decoration: line-through;
+}
+
+.summaryFree {
+	font-size: 13px;
+	color: #333;
+	font-weight: 600;
+}
+
+/* ============================================================
+   TUJUAN CARD
+   ============================================================ */
+.tujuanCard {
+	background: #fff;
+	padding: 14px 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}
+
+.tujuanValue {
+	font-size: 14px;
+	font-weight: 700;
+	color: #111;
+}
+
+/* ============================================================
+   AGREEMENT
+   ============================================================ */
+.agreement {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	padding: 14px 16px;
+	background: #fff;
+	margin-bottom: 8px;
+}
+
+.agreementCheck {
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	border: 2px solid #ccc;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	margin-top: 1px;
+	transition: all 0.2s;
+}
+
+.agreementCheckActive {
+	background: #e8192c;
+	border-color: #e8192c;
+}
+
+.agreementText {
+	font-size: 13px;
+	color: #555;
+	line-height: 1.5;
+	max-width: none;
+}
+
+.agreementLink {
+	color: #1976d2;
+	text-decoration: underline;
+	text-decoration-color: #1976d2;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 16px 20px;
+	background: #fff;
+	border-top: 1px solid #f0f0f0;
+	gap: 12px;
+}
+
+.footerAmount {
+	display: flex;
+	flex-direction: column;
+}
+
+.footerAmountValue {
+	font-size: 18px;
+	font-weight: 800;
+	color: #111;
+}
+
+.footerAmountLabel {
+	font-size: 11px;
+	color: #888;
+}
+
+.ajukanBtn {
+	background: linear-gradient(135deg, #e8192c 0%, #c0000f 100%);
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
+	padding: 14px 24px;
+	border-radius: 28px;
+	flex: 1;
+	text-align: center;
+	transition: all 0.2s;
+	max-width: 200px;
+}
+
+.ajukanBtn:active:not(:disabled) {
+	transform: scale(0.97);
+}
+
+.ajukanBtnDisabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+/* ============================================================
+   OVERLAY & MODALS
+   ============================================================ */
+.overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.55);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 200;
+	padding: 20px;
+}
+
+.overlayCard {
+	background: #fff;
+	border-radius: 20px;
+	padding: 32px 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	width: 100%;
+	max-width: 320px;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.spinner {
+	width: 44px;
+	height: 44px;
+	border: 4px solid rgba(232, 25, 44, 0.15);
+	border-top-color: #e8192c;
+	border-radius: 50%;
+	display: inline-block;
+	margin-bottom: 12px;
+	animation: spin 0.8s linear infinite;
+	transform: translateZ(0);
+}
+
+.overlayText {
+	font-size: 14px;
+	color: #555;
+	text-align: center;
+	max-width: none;
+}
+
+.modalCard {
+	background: #fff;
+	border-radius: 20px;
+	padding: 28px 24px 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+	width: 100%;
+	max-width: 320px;
+}
+
+.modalIcon {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modalTitle {
+	font-size: 19px;
+	font-weight: 800;
+	color: #111;
+	text-align: center;
+}
+
+.modalMsg {
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+	line-height: 1.6;
+	max-width: none;
+}
+
+.modalBtn {
+	width: 100%;
+	background: #e8192c;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
+	padding: 14px;
+	border-radius: 28px;
+	margin-top: 4px;
+	text-align: center;
+}
+
+.modalBtnSecondary {
+	width: 100%;
+	background: #e8192c;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
+	padding: 14px;
+	border-radius: 28px;
+	margin-top: 4px;
+	text-align: center;
+}
+
+.modalBtnOutline {
+	width: 100%;
+	background: #fff;
+	color: #888;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 12px;
+	border-radius: 28px;
+	border: 1px solid #e0e0e0;
+	text-align: center;
+}

@@ -1,0 +1,17 @@
+.appShell {
+	display: flex;
+	flex-direction: column;
+	min-height: 100dvh;
+	max-width: 480px;
+	width: 100%;
+	margin: 0 auto;
+	background: #f5f5f5;
+	position: relative;
+}
+
+.mainContent {
+	flex: 1;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-bottom: 64px;
+}
