@@ -23,7 +23,7 @@ const iconStyle: CSSProperties = {
 export const contentType = 'image/png'
 
 const Icon = () => {
-	return new ImageResponse(<div style={iconStyle}>B</div>, {
+	return new ImageResponse(<div style={iconStyle}>C</div>, {
 		...size
 	})
 }
